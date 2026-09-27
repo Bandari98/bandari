@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Bandari | Flutter Developer & Software Engineer</title>
+  
+  <!-- SEO & Meta -->
+  <meta name="description" content="Portfolio of Mahmoud Bandari - Flutter Developer and Software Engineer specializing in high-performance, responsive mobile applications." />
+  <meta name="keywords" content="Mahmoud Bandari, Flutter Developer, Dart, Mobile App Development, Android, Software Engineer, Portfolio" />
+  <meta name="author" content="Mahmoud Bandari" />
+  <meta property="og:title" content="Mahmoud Bandari | Flutter Developer Portfolio" />
+  <meta property="og:description" content="Flutter Developer turning ideas into smooth, functional, and engaging mobile experiences." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Background Effects -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo-brand">
+        <span class="logo-code">&lt;</span><span class="logo-name">MB</span><span class="logo-code"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Theme Switch -->
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon theme-icon moon-icon"></i>
+          <i class="fa-solid fa-sun theme-icon sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-outline btn-sm nav-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for New Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Mahmoud Bandari</span>
+          </h1>
+
+          <!-- Typewriter Effect -->
+          <div class="typewriter-box">
+            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Flutter Developer turning ideas into smooth, functional, and engaging mobile experiences. Focused on building applications that look great, work seamlessly, and deliver real value.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <!-- Download CV Button: Point href to your actual CV file (e.g. assets/cv.pdf) -->
+            <a href="assets/cv.pdf" class="btn btn-primary" id="downloadCvBtn" download="Mahmoud_Bandari_CV">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>View Projects</span>
+            </a>
+          </div>
+
+          <!-- Social Links Quick Bar -->
+          <div class="hero-socials">
+            <a href="https://wa.me/201017136712" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:albndary2021@gmail.com" class="social-link" title="Email Me">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Content: Profile Image Spot -->
+        <div class="hero-media">
+          <div class="image-wrapper glow-frame">
+            <!-- ============================================================== -->
+            <!-- USER IMAGE (HOME - RIGHT): Replace src below with your photo  -->
+            <!-- Example: src="assets/images/my_photo.jpg"                      -->
+            <!-- ============================================================== -->
+            <img 
+              src="assets/images/profile1.png" 
+              alt="Mahmoud Bandari - Flutter Developer" 
+              class="hero-profile-img"
+              id="heroImage"
+            />
+            
+            <!-- Floating Tech Badges with Micro-Animations -->
+            <div class="floating-badge badge-flutter">
+              <i class="fa-brands fa-flutter"></i>
+              <span>Flutter</span>
+            </div>
+            
+            <div class="floating-badge badge-dart">
+              <i class="fa-solid fa-code"></i>
+              <span>Dart</span>
+            </div>
+
+            <div class="floating-badge badge-android">
+              <i class="fa-brands fa-android"></i>
+              <span>Android</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">Dedicated to engineering intuitive, high-standard mobile apps</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Content: Profile Image Spot -->
+          <div class="about-media">
+            <div class="about-image-card">
+              <!-- ============================================================== -->
+              <!-- USER IMAGE (ABOUT - LEFT): Replace src below with your photo   -->
+              <!-- Example: src="assets/images/about_photo.jpg"                   -->
+              <!-- ============================================================== -->
+              <img 
+                src="assets/images/profile1.png" 
+                alt="Mahmoud Bandari Profile" 
+                class="about-img"
+                id="aboutImage"
+              />
+              <div class="experience-ribbon">
+                <span class="ribbon-number">2026</span>
+                <span class="ribbon-label">Present</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: About Bio & Highlights -->
+          <div class="about-content">
+            <div class="about-quote-box">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="about-lead">
+                I’m Mahmoud Bandari, a Flutter Developer focused on building modern and user-friendly mobile applications with clean code and responsive UI.
+              </p>
+            </div>
+
+            <p class="about-text">
+              Passionate about turning client ideas into refined digital products that excel in performance, look stunning on every screen size, and provide silky-smooth interactions. With a deep foundation in Computer Science, I craft applications with scalability, clean architecture, and best software practices at the core.
+            </p>
+
+            <!-- Highlights Grid -->
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="highlight-info">
+                  <h4>Mobile First</h4>
+                  <p>iOS & Android Cross-Platform</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="highlight-info">
+                  <h4>Clean UI/UX</h4>
+                  <p>Responsive & Pixel-Perfect</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="highlight-info">
+                  <h4>API Integration</h4>
+                  <p>Seamless RESTful Services</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="highlight-info">
+                  <h4>Clean Code</h4>
+                  <p>Maintainable Architecture</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Get In Touch</span>
+              </a>
+              <a href="#skills" class="btn btn-outline">
+                <i class="fa-solid fa-arrow-down"></i>
+                <span>Explore Skills</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">Strong academic foundation supporting professional mobile development</p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="glass-card education-card">
+            <div class="edu-header">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-title-group">
+                <h3 class="edu-university">Al-Salhia University</h3>
+                <span class="edu-degree">Computer Science (CS)</span>
+              </div>
+              <span class="edu-badge">Academic Degree</span>
+            </div>
+
+            <p class="edu-description">
+              Studied computer science fundamentals, programming, databases, algorithms, data structures, and software development. Built a strong foundation in programming and mobile application development.
+            </p>
+
+            <div class="edu-coursework">
+              <span class="course-pill"><i class="fa-solid fa-check"></i> Algorithms</span>
+              <span class="course-pill"><i class="fa-solid fa-check"></i> Data Structures</span>
+              <span class="course-pill"><i class="fa-solid fa-check"></i> OOP (Object-Oriented Programming)</span>
+              <span class="course-pill"><i class="fa-solid fa-check"></i> Database Management Systems</span>
+              <span class="course-pill"><i class="fa-solid fa-check"></i> Software Engineering</span>
+              <span class="course-pill"><i class="fa-solid fa-check"></i> Mobile Application Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+          <p class="section-subtitle">Real-world experience crafting practical, robust mobile applications</p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Flutter Developer</h3>
+                  <span class="timeline-company">Independent & Client Projects</span>
+                </div>
+                <div class="timeline-period-badge">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>2026 – Present</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                Developing mobile applications using Flutter and Dart, implementing responsive UI designs, integrating APIs, and building practical projects to improve my development skills.
+              </p>
+
+              <ul class="timeline-bullets">
+                <li><i class="fa-solid fa-circle-check"></i> Architecting and deploying scalable mobile applications using Flutter and Dart for Android & iOS platforms.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Converting sophisticated UI/UX designs into fluid, responsive, pixel-perfect user interfaces.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Integrating RESTful APIs, parsing complex JSON responses, and managing efficient asynchronous data streams.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Utilizing Git & GitHub for clean version control, collaborative workflows, and branch management.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competence</span>
+          <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">Technologies, frameworks, and engineering tools I specialize in</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Flutter -->
+          <div class="glass-card skill-card" data-skill="flutter">
+            <div class="skill-icon-wrapper flutter-icon">
+              <i class="fa-brands fa-flutter"></i>
+            </div>
+            <h3 class="skill-title">Flutter</h3>
+            <p class="skill-level">Core Framework</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Dart -->
+          <div class="glass-card skill-card" data-skill="dart">
+            <div class="skill-icon-wrapper dart-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="skill-title">Dart</h3>
+            <p class="skill-level">Programming Language</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Android Development -->
+          <div class="glass-card skill-card" data-skill="android">
+            <div class="skill-icon-wrapper android-icon">
+              <i class="fa-brands fa-android"></i>
+            </div>
+            <h3 class="skill-title">Android Development</h3>
+            <p class="skill-level">Native & Hybrid</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Mobile App Development -->
+          <div class="glass-card skill-card" data-skill="mobile">
+            <div class="skill-icon-wrapper mobile-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="skill-title">Mobile App Development</h3>
+            <p class="skill-level">Cross-Platform</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: UI Implementation -->
+          <div class="glass-card skill-card" data-skill="ui">
+            <div class="skill-icon-wrapper ui-icon">
+              <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <h3 class="skill-title">UI Implementation</h3>
+            <p class="skill-level">Pixel-Perfect Layouts</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 96%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: API Integration -->
+          <div class="glass-card skill-card" data-skill="api">
+            <div class="skill-icon-wrapper api-icon">
+              <i class="fa-solid fa-plug-circle-bolt"></i>
+            </div>
+            <h3 class="skill-title">API Integration</h3>
+            <p class="skill-level">RESTful Architecture</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 7: Git & GitHub -->
+          <div class="glass-card skill-card" data-skill="git">
+            <div class="skill-icon-wrapper git-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <h3 class="skill-title">Git & GitHub</h3>
+            <p class="skill-level">Version Control & CI/CD</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 8: Responsive UI -->
+          <div class="glass-card skill-card" data-skill="responsive">
+            <div class="skill-icon-wrapper responsive-icon">
+              <i class="fa-solid fa-arrows-split-up-and-left"></i>
+            </div>
+            <h3 class="skill-title">Responsive UI</h3>
+            <p class="skill-level">Adaptive All Displays</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 9: Problem Solving -->
+          <div class="glass-card skill-card" data-skill="problem-solving">
+            <div class="skill-icon-wrapper problem-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="skill-title">Problem Solving</h3>
+            <p class="skill-level">Algorithms & Optimization</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Portfolio</span>
+          <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications delivering polished mobile experiences</p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- Project Item 1 -->
+          <article class="glass-card project-card">
+            <!-- Left Info (Name, Description, Links) -->
+            <div class="project-info">
+              <div class="project-badge">Featured Flutter App</div>
+              <h3 class="project-title">FinCommerce - E-Commerce & Finance App</h3>
+              <p class="project-description">
+                A sleek, cross-platform mobile application combining online retail shopping with a personal digital wallet. Features interactive product catalogs, real-time balance metrics, animated charts, and seamless REST API integration.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Provider / Bloc</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <!-- Project Links -->
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="project1LiveBtn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="project1GithubBtn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Media (Image Spot requested) -->
+            <div class="project-media">
+              <div class="project-image-container">
+                <!-- ============================================================== -->
+                <!-- USER IMAGE (PROJECT 1 - RIGHT): Replace src with your image   -->
+                <!-- Example: src="assets/images/fincommerce.png"                  -->
+                <!-- ============================================================== -->
+                <img 
+                  src="assets/images/project1.jpg" 
+                  alt="FinCommerce Mobile Application" 
+                  class="project-img"
+                  id="project1Image"
+                />
+                <div class="project-overlay">
+                  <a href="assets/images/project1.jpg" target="_blank" class="overlay-zoom-btn" title="View Full Image">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Item 2 -->
+          <article class="glass-card project-card">
+            <!-- Left Info -->
+            <div class="project-info">
+              <div class="project-badge">Productivity & Utility</div>
+              <h3 class="project-title">HabitFlow - Modern Task & Habit Tracker</h3>
+              <p class="project-description">
+                A streamlined daily habit tracking and productivity app built with Flutter. Provides streak management, interactive dark mode dashboards, custom progress rings, offline caching, and intuitive user workflows.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Local Storage</span>
+                <span class="tech-tag">UI Implementation</span>
+                <span class="tech-tag">Clean Architecture</span>
+              </div>
+
+              <!-- Project Links -->
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="project2LiveBtn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="project2GithubBtn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Media (Image Spot requested) -->
+            <div class="project-media">
+              <div class="project-image-container">
+                <!-- ============================================================== -->
+                <!-- USER IMAGE (PROJECT 2 - RIGHT): Replace src with your image   -->
+                <!-- Example: src="assets/images/habitflow.png"                    -->
+                <!-- ============================================================== -->
+                <img 
+                  src="assets/images/project2.jpg" 
+                  alt="HabitFlow Mobile Application" 
+                  class="project-img"
+                  id="project2Image"
+                />
+                <div class="project-overlay">
+                  <a href="assets/images/project2.jpg" target="_blank" class="overlay-zoom-btn" title="View Full Image">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Item 3 (Customizable Template Card) -->
+          <article class="glass-card project-card">
+            <!-- Left Info -->
+            <div class="project-info">
+              <div class="project-badge">Mobile Food Delivery UI</div>
+              <h3 class="project-title">FoodieGo - On-Demand Food Delivery</h3>
+              <p class="project-description">
+                Interactive mobile food ordering app with real-time location integration, food customization screens, animated cart summary, and clean state handling across Android and iOS devices.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">UI Implementation</span>
+              </div>
+
+              <!-- Project Links -->
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="project3LiveBtn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="project3GithubBtn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Media (Image Spot) -->
+            <div class="project-media">
+              <div class="project-image-container">
+                <!-- ============================================================== -->
+                <!-- USER IMAGE (PROJECT 3 - RIGHT): Replace src with your image   -->
+                <!-- Example: src="assets/images/foodiego.png"                     -->
+                <!-- ============================================================== -->
+                <img 
+                  src="assets/images/project1.jpg" 
+                  alt="FoodieGo Mobile Application" 
+                  class="project-img"
+                  id="project3Image"
+                />
+                <div class="project-overlay">
+                  <a href="assets/images/project1.jpg" target="_blank" class="overlay-zoom-btn" title="View Full Image">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">My <span class="text-gradient">Services</span></h2>
+          <p class="section-subtitle">High-quality development services tailored to client needs</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Flutter App Development -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="fa-brands fa-flutter"></i>
+            </div>
+            <h3 class="service-title">Flutter App Development</h3>
+            <p class="service-description">
+              Building modern and responsive mobile applications using Flutter and Dart.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Cross-platform iOS & Android</li>
+              <li><i class="fa-solid fa-check"></i> High performance and 60fps animations</li>
+              <li><i class="fa-solid fa-check"></i> State management best practices</li>
+            </ul>
+          </div>
+
+          <!-- Service 2: Android App Development -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="fa-brands fa-android"></i>
+            </div>
+            <h3 class="service-title">Android App Development</h3>
+            <p class="service-description">
+              Developing Android applications with clean and user-friendly interfaces.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Material Design implementation</li>
+              <li><i class="fa-solid fa-check"></i> Optimized for diverse Android devices</li>
+              <li><i class="fa-solid fa-check"></i> Smooth navigation & transitions</li>
+            </ul>
+          </div>
+
+          <!-- Service 3: UI Implementation -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="service-title">UI Implementation</h3>
+            <p class="service-description">
+              Turning UI/UX designs into responsive and functional Flutter screens.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Figma / Adobe XD to Flutter code</li>
+              <li><i class="fa-solid fa-check"></i> Pixel-perfect responsive layouts</li>
+              <li><i class="fa-solid fa-check"></i> Custom widgets & interactive animations</li>
+            </ul>
+          </div>
+
+          <!-- Service 4: API Integration -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="service-title">API Integration</h3>
+            <p class="service-description">
+              Connecting mobile applications with REST APIs and handling data efficiently.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> RESTful API endpoints integration</li>
+              <li><i class="fa-solid fa-check"></i> Secure authentication & token handling</li>
+              <li><i class="fa-solid fa-check"></i> Robust error handling & data caching</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. FEEDBACK (TESTIMONIALS SLIDER) SECTION -->
+    <section class="section feedback-section" id="feedback">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">Client & Peer <span class="text-gradient">Feedback</span></h2>
+          <p class="section-subtitle">What collaborators and peers say about working with me</p>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="slider-wrapper">
+          <div class="slider-track" id="testimonialTrack">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <div class="glass-card testimonial-card">
+                <div class="quote-badge"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  “Mahmoud has a good understanding of Flutter and always works on improving his skills. His projects show creativity and attention to detail.”
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar-badge">MA</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Mahmoud Ahmed</h4>
+                    <p class="author-role">Flutter Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="glass-card testimonial-card">
+                <div class="quote-badge"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  “Working with Mahmoud was a great experience. He is organized, learns quickly, and pays attention to creating clean and user-friendly interfaces.”
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar-badge">YT</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Youssef Tharwat</h4>
+                    <p class="author-role">Software Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="glass-card testimonial-card">
+                <div class="quote-badge"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  “Mahmoud is a dedicated developer who puts effort into every project and always looks for ways to improve the final result.”
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar-badge">AM</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Ahmed Mohamed</h4>
+                    <p class="author-role">CS Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="prevSlideBtn" aria-label="Previous Slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider-dots" id="sliderDots">
+              <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+              <button class="dot" data-index="1" aria-label="Slide 2"></button>
+              <button class="dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+
+            <button class="slider-btn next-btn" id="nextSlideBtn" aria-label="Next Slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. GET IN TOUCH (CONTACT) SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <p class="section-subtitle">Have an exciting idea or mobile app project? Let's discuss and build it together!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info Cards -->
+          <div class="contact-info-column">
+            
+            <!-- Email Card -->
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon email-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3>Email Address</h3>
+                <p>Send an inquiry anytime:</p>
+                <a href="mailto:albndary2021@gmail.com" class="contact-link" id="emailContactLink">
+                  albndary2021@gmail.com
+                </a>
+              </div>
+              <div class="contact-card-action">
+                <a href="mailto:albndary2021@gmail.com" class="btn btn-outline btn-sm">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Mail Me</span>
+                </a>
+                <button class="btn btn-icon copy-btn" data-copy="albndary2021@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="glass-card contact-card">
+              <div class="contact-card-icon whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-card-body">
+                <h3>WhatsApp Chat</h3>
+                <p>Fast messaging & discussions:</p>
+                <a href="https://wa.me/201017136712" target="_blank" rel="noopener noreferrer" class="contact-link" id="whatsappContactLink">
+                  +20 101 713 6712
+                </a>
+              </div>
+              <div class="contact-card-action">
+                <a href="https://wa.me/201017136712" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Chat Now</span>
+                </a>
+                <button class="btn btn-icon copy-btn" data-copy="01017136712" title="Copy Number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Availability Card -->
+            <div class="glass-card contact-card availability-box">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Ready to start immediately</span>
+              </div>
+              <p>Specialized in Flutter, Android, Dart & API integrations.</p>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-column">
+            <div class="glass-card form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill in the details below and I'll get back to you promptly.</p>
+              
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. John Doe" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. john@example.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input type="text" id="senderSubject" name="subject" class="form-control" placeholder="Project Inquiry / Job Opportunity" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message</label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-comment-dots input-icon"></i>
+                    <textarea id="senderMessage" name="message" class="form-control" rows="4" placeholder="Hello Mahmoud, I'd like to collaborate on..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitContactBtn">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+
+                <div class="form-status" id="formStatus" style="display: none;"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo-brand">
+          <span class="logo-code">&lt;</span><span class="logo-name">MB</span><span class="logo-code"> /&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting modern, high-performance Flutter mobile experiences.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://wa.me/201017136712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:albndary2021@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2026 Mahmoud Bandari. All Rights Reserved.</p>
+        <p class="designed-by">Designed with <i class="fa-solid fa-heart heart-icon"></i> for High Performance</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Copy Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
